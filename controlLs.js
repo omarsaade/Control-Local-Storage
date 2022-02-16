@@ -7,7 +7,7 @@ let deleto = document.getElementById("delete");
 
 var Arr = [];
 
-// Added text To The Local Storage
+// Add text To Local Storage
 add.onclick = function () {
     if (input.value == "") {
         document.querySelector(".span").innerHTML = `input is empty`;
@@ -23,7 +23,7 @@ add.onclick = function () {
 
 
 
-// show local storage items in document
+// show local storage items 
 show.onclick = function () {
 
     if (Arr == "") { } else {
@@ -53,7 +53,7 @@ deleto.onclick = function () {
 
 
 
-//check if there is element in local storage
+//check if there is an element in local storage
 check.onclick = function () {
     if (input.value == "") {
     } else {
