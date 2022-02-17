@@ -56,10 +56,13 @@ deleto.onclick = function () {
 //check if there is an element in local storage
 check.onclick = function () {
     if (input.value == "") {
+        document.querySelector(".span").innerHTML = `input is empty`;
     } else {
-        var c = input.value;
-        if (Arr.includes(c)) {
-            document.querySelector(".span").innerHTML = `Found Local Storage Item Called ${c}`;
+
+        if (Arr.includes(input.value)) {
+            document.querySelector(".span").innerHTML = `Found Local Storage Item Called ${input.value}`;
+        } else {
+            document.querySelector(".span").innerHTML = ` Not Found in Local Storage  `;
         }
     }
 }
